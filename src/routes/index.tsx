@@ -1,5 +1,5 @@
 import React from 'react';
-import StackRoutes from './stack.routes';
+import StackRoutes from './stack.routes.tsx';
 
 const Routes = () => (
   <StackRoutes />

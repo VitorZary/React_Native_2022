@@ -12,8 +12,9 @@ import { AntDesign, MaterialIcons, MaterialCommunityIcons, Ionicons  } from '@ex
 import fonts from '../styles/fonts';
 
 import DrawerRoutes from './drawer.routes';
-//import Pessoas from '../screens/Usuarios';
+import Usuarios from '../screens/Usuarios';
 import { DrawerActions, useNavigation } from '@react-navigation/native';
+
 
 const AppTab = createBottomTabNavigator();
 
@@ -86,8 +87,8 @@ const AuthRoutes = () => {
                 />
 
                 <AppTab.Screen
-                    name="Pessoas"
-                    component={Pessoas}
+                    name="Usuarios"
+                    component={Usuarios}
                     options={{
                         tabBarIcon: (({ size, color}) => (
                             <MaterialIcons
@@ -112,7 +113,7 @@ const AuthRoutes = () => {
                                         fontSize: 12
                                     }}
                                 >
-                                    Pessoas
+                                    Usuarios
                                 </Text>
                                 <View
                                     style={ focused ? {
@@ -135,7 +136,7 @@ const AuthRoutes = () => {
 
                 <AppTab.Screen
                     name="Aba 3"
-                    component={Pessoas}
+                    component={Usuarios}
                     options={{
                         tabBarIcon: (({size, color}) => (
                             <MaterialCommunityIcons
@@ -159,7 +160,7 @@ const AuthRoutes = () => {
                                         fontSize: 12
                                     }}
                                 >
-                                    Pessoas
+                                    Usuarios
                                 </Text>
                                 <View
                                     style={ focused ? {
@@ -182,7 +183,7 @@ const AuthRoutes = () => {
 
                 <AppTab.Screen
                     name="Aba 4"
-                    component={Pessoas}
+                    component={Usuarios}
 
                     options={{
                         tabBarIcon: (({ size, color}) => (
