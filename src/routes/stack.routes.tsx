@@ -21,3 +21,12 @@ function StackNavigator(){
         </Stack.Navigator>
     )
 }
+
+function AppRoutes(){
+    return(
+        <NavigationContainer>
+            <StackNavigator />
+        </NavigationContainer>
+    )
+}
+export default AppRoutes;
